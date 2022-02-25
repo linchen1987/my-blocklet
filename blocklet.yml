@@ -1,0 +1,31 @@
+community: ''
+description: My Demo Blocklet
+did: z8ia4zFrpmi7DRUXsvmpgY3Mopcz84Zo3G7EB
+documentation: ''
+group: gateway
+homepage: ''
+name: my-blocklet
+nftFactory: ''
+screenshots: []
+title: My Blocklet
+version: 1.0.0
+capabilities:
+  clusterMode: false
+  component: false
+children:
+  - name: nextjs-demo
+    resolved: >-
+      https://dev.store.blocklet.dev/api/blocklets/z8iZrGV1si82vtbyVWRMk6jyNfubypLJ3zi6k/blocklet.json
+    mountPoint: /
+interfaces:
+  - name: publicUrl
+    path: /
+    port: BLOCKLET_PORT
+    prefix: '*'
+    protocol: http
+    type: web
+payment:
+  price: []
+  share: []
+logo: logo.png
+environments: []
